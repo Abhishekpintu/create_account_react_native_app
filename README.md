@@ -7,6 +7,7 @@ A sample React Native application that demonstrates account creation with input 
 - React Native Framework 
 - Android SDK
 - Emulator or Physical Device
+- Jest
 
 ## Instructions to run
 - Update the "BASEURL" under the /src/utils/constants with server domain
@@ -16,6 +17,10 @@ A sample React Native application that demonstrates account creation with input 
 ## Tools
 - Visual Studio Code 
 - Postman (or any RESTful API testing tool)
+
+## Test Coverage
+<img width="1529" alt="image" src="https://github.com/user-attachments/assets/80ed3f63-5d3f-468b-8962-c6ad08841749">
+
 
 <br/>
 
