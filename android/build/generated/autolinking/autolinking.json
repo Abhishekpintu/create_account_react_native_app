@@ -1,14 +1,14 @@
 {
-  "root": "/Users/abhishekagopal/Documents/rnd/Others/createAccount",
-  "reactNativePath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native",
+  "root": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app",
+  "reactNativePath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native",
   "reactNativeVersion": "0.75",
   "dependencies": {
     "lottie-ios": {
-      "root": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/lottie-ios",
+      "root": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/lottie-ios",
       "name": "lottie-ios",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/lottie-ios/lottie-ios.podspec",
+          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/lottie-ios/lottie-ios.podspec",
           "version": "4.5.0",
           "configurations": [],
           "scriptPhases": []
@@ -17,17 +17,17 @@
       }
     },
     "lottie-react-native": {
-      "root": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/lottie-react-native",
+      "root": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/lottie-react-native",
       "name": "lottie-react-native",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/lottie-react-native/lottie-react-native.podspec",
+          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/lottie-react-native/lottie-react-native.podspec",
           "version": "6.7.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/lottie-react-native/android",
+          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/lottie-react-native/android",
           "packageImportPath": "import com.airbnb.android.react.lottie.LottiePackage;",
           "packageInstance": "new LottiePackage()",
           "buildTypes": [],
@@ -35,7 +35,7 @@
           "componentDescriptors": [
             "LottieAnimationViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/lottie-react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/lottie-react-native/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -44,17 +44,17 @@
       }
     },
     "react-native-gesture-handler": {
-      "root": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-gesture-handler",
+      "root": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-gesture-handler",
       "name": "react-native-gesture-handler",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
+          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
           "version": "2.18.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-gesture-handler/android",
+          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-gesture-handler/android",
           "packageImportPath": "import com.swmansion.gesturehandler.RNGestureHandlerPackage;",
           "packageInstance": "new RNGestureHandlerPackage()",
           "buildTypes": [],
@@ -63,7 +63,7 @@
             "RNGestureHandlerButtonComponentDescriptor",
             "RNGestureHandlerRootViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -72,17 +72,17 @@
       }
     },
     "react-native-safe-area-context": {
-      "root": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-safe-area-context",
+      "root": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
+          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
           "version": "4.10.9",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-safe-area-context/android",
+          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-safe-area-context/android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -91,7 +91,7 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -100,17 +100,17 @@
       }
     },
     "react-native-screens": {
-      "root": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-screens",
+      "root": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-screens",
       "name": "react-native-screens",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-screens/RNScreens.podspec",
+          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-screens/RNScreens.podspec",
           "version": "3.34.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-screens/android",
+          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-screens/android",
           "packageImportPath": "import com.swmansion.rnscreens.RNScreensPackage;",
           "packageInstance": "new RNScreensPackage()",
           "buildTypes": [],
@@ -126,7 +126,7 @@
             "RNSScreenComponentDescriptor",
             "RNSModalScreenComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -135,23 +135,23 @@
       }
     },
     "react-native-vector-icons": {
-      "root": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-vector-icons",
+      "root": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-vector-icons",
       "name": "react-native-vector-icons",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-vector-icons/RNVectorIcons.podspec",
+          "podspecPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-vector-icons/RNVectorIcons.podspec",
           "version": "10.1.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-vector-icons/android",
+          "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-vector-icons/android",
           "packageImportPath": "import com.oblador.vectoricons.VectorIconsPackage;",
           "packageInstance": "new VectorIconsPackage()",
           "buildTypes": [],
           "libraryName": "RNVectorIconsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -321,7 +321,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "/Users/abhishekagopal/Documents/rnd/Others/createAccount"
+          "default": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app"
         },
         {
           "name": "--platform <string>",
@@ -373,7 +373,7 @@
         {
           "name": "--terminal <string>",
           "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
-          "default": "Apple_Terminal"
+          "default": "vscode"
         },
         {
           "name": "--binary-path <string>",
@@ -529,7 +529,7 @@
         {
           "name": "--terminal <string>",
           "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
-          "default": "Apple_Terminal"
+          "default": "vscode"
         },
         {
           "name": "--appId <string>",
@@ -604,7 +604,7 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/ios",
+      "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/ios",
       "xcodeProject": {
         "name": "createAccount.xcodeproj",
         "path": ".",
@@ -613,7 +613,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/createAccount/android",
+      "sourceDir": "/Users/abhishekagopal/Documents/rnd/Others/create_account_react_native_app/android",
       "appName": "app",
       "packageName": "com.createaccount",
       "applicationId": "com.createaccount",

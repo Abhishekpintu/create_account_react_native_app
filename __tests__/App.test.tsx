@@ -1,17 +1,31 @@
-/**
- * @format
- */
-
-import 'react-native';
 import React from 'react';
-import App from '../App';
+import { render } from '@testing-library/react-native';
+import App from '../App'; 
+import { Provider } from 'react-redux';
+import rootReducer from '../src/store/slices/authSlice'; 
+import { configureStore } from '@reduxjs/toolkit';
 
-// Note: import explicitly to use the types shipped with jest.
-import {it} from '@jest/globals';
+// Mock store for testing
+const store = configureStore({
+  reducer: rootReducer,
+});
+describe('App Component', () => {
+  test('renders correctly', () => {
+    const { toJSON } = render(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
+    expect(toJSON()).toMatchSnapshot();
+  });
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+  test('contains AppNavigator', () => {
+    const { getByTestId } = render(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+  });
+
 });

@@ -19,13 +19,14 @@ const SignUpSuccessScreen: React.FC<SignUpSuccessScreenProps> = ({ navigation })
   const { isAuthenticated, user } = useSelector((state: RootState) => state.auth);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID="SignUpSuccessScreenContainer">
       <Image
         source={require('../../assets/img/raklogo.png')} 
         style={styles.logo}
       />
         <Text style={styles.title}>Successfully Submitted!</Text>
         <LottieView
+          testID='lottie-animation'
           source={require('../../assets/anim/success.json')}  
           autoPlay
           loop

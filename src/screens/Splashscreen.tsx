@@ -15,7 +15,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
   }, [navigation]);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID="splashScreenContainer">
       <Image
         source={require('../../assets/img/raklogo.png')} 
         style={styles.logo}

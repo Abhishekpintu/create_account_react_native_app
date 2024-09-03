@@ -16,8 +16,8 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 const AppNavigator: React.FC = () => {
   return (
-    <NavigationContainer>
-    <Stack.Navigator initialRouteName="SplashScreen" screenOptions={{ headerShown: false }}>
+    <NavigationContainer >
+    <Stack.Navigator initialRouteName="SplashScreen" screenOptions={{ headerShown: false }} >
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
       <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
       <Stack.Screen name="SignUpSuccessScreen" component={SignUpSuccessScreen} />

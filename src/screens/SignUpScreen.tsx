@@ -126,8 +126,6 @@ const SignUpScreen: React.FC<SignUpScreenProps> = ({ navigation }) => {
                   console.log(errorResult)
                 }
               } catch (error) {
-                console.log(error)
-
                 Alert.alert('Signup Failed', 'Network error. Please try again later.');
               }
               finally {
@@ -137,7 +135,7 @@ const SignUpScreen: React.FC<SignUpScreenProps> = ({ navigation }) => {
     }
 
     return (
-        <View style={styles.container}>
+        <View style={styles.container} testID="SignupScreenContainer">
             <Image
                 source={require('../../assets/img/raklogo.png')}
                 style={styles.logo}
@@ -186,7 +184,7 @@ const SignUpScreen: React.FC<SignUpScreenProps> = ({ navigation }) => {
                     onChangeText={setPassword}
                     secureTextEntry={!showPassword}
                 />
-                <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
+                <TouchableOpacity onPress={() => setShowPassword(!showPassword)} testID='passwordToggle'>
                     <Icon name={showPassword ? "eye-slash" : "eye"} style={styles.icon} />
                 </TouchableOpacity>
             </View>
@@ -197,7 +195,7 @@ const SignUpScreen: React.FC<SignUpScreenProps> = ({ navigation }) => {
 
             {/* Terms and Conditions Checkbox */}
             <View style={{ flexDirection: 'row', justifyContent: 'flex-start', marginTop: 20 }}>
-                <TouchableOpacity style={{ flexDirection: 'row', flex: 1 }} onPress={() => setIsChecked(!isChecked)}>
+                <TouchableOpacity style={{ flexDirection: 'row', flex: 1 }} onPress={() => setIsChecked(!isChecked)} testID='termNcondition'>
                     <Icon name={isChecked ? "check-square" : "square"} style={[styles.icon, { fontSize: 20, marginLeft: 0 }]} />
                     <Text>I agree with <Text style={{ color: PRIMARY_COLOR }}>Terms</Text> and <Text style={{ color: PRIMARY_COLOR }}>Privacy</Text></Text>
                 </TouchableOpacity>
