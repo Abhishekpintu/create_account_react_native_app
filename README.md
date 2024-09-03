@@ -19,7 +19,7 @@ A sample React Native application that demonstrates account creation with input 
 - Postman (or any RESTful API testing tool)
 
 ## Test Coverage
-<img width="1529" alt="image" src="https://github.com/user-attachments/assets/80ed3f63-5d3f-468b-8962-c6ad08841749">
+<img width="1529" alt="image" src="https://github.com/user-attachments/assets/22b31ee8-c456-4209-b299-e476ed2245b6">
 
 
 <br/>
