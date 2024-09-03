@@ -8,11 +8,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { renderWithProviders } from '../../../jest/render-provider'; 
 
-// type SignUpSuccessScreenProps = {
-//   navigation: StackNavigationProp<RootStackParamList, 'SignUpSuccessScreen'>;
-// };
-
-// Create a mock navigation prop that adheres to the StackNavigationProp type
 const createMockNavigation = (): StackNavigationProp<RootStackParamList, 'SignUpSuccessScreen'> => ({
     navigate: jest.fn(),
     goBack: jest.fn(),
@@ -52,7 +47,7 @@ describe('SignUpSuccessScreen', () => {
     });
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     render(
       <Provider store={store}>
         <NavigationContainer>
