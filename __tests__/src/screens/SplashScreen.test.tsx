@@ -1,5 +1,4 @@
 import React from 'react';
-import { waitFor } from '@testing-library/react-native';
 import configureStore from 'redux-mock-store';
 import SplashScreen from '../../../src/screens/SplashScreen';
 import { RootStackParamList } from '../../../src/navigation/AppNavigator';

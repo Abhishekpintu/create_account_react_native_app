@@ -23,12 +23,16 @@ const createMockNavigation = (): StackNavigationProp<RootStackParamList, 'SignUp
     getId: jest.fn(),
     getState: jest.fn(),
   } as unknown as StackNavigationProp<RootStackParamList, 'SignUpSuccessScreen'>);
+  let mockNavigation: StackNavigationProp<RootStackParamList, 'SignUpSuccessScreen'>;
 
 const mockStore = configureStore([]);
 
+beforeAll(()=>{
+mockNavigation = createMockNavigation();
+})
+
 describe('SignUpSuccessScreen', () => {
 
-    const mockNavigation = createMockNavigation();
     const { getByText, getByPlaceholderText } = renderWithProviders(
       <SignUpSuccessScreen navigation={mockNavigation} />
     );  

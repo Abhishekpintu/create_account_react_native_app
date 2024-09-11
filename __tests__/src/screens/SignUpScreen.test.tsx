@@ -1,9 +1,9 @@
 import React from 'react';
 import { fireEvent, waitFor } from '@testing-library/react-native';
-import SignUpScreen from '../../../src/screens/SignUpScreen'; // Adjust the import path
+import SignUpScreen from '../../../src/screens/SignUpScreen'; 
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../../../src/navigation/AppNavigator'; // Adjust the import path
-import { renderWithProviders } from '../../../jest/render-provider'; // Adjust the import path
+import { RootStackParamList } from '../../../src/navigation/AppNavigator'; 
+import { renderWithProviders } from '../../../jest/render-provider'; 
 
 // Create a mock navigation prop that adheres to the StackNavigationProp type
 const createMockNavigation = (): StackNavigationProp<RootStackParamList, 'SignUpScreen'> => ({
@@ -21,17 +21,19 @@ const createMockNavigation = (): StackNavigationProp<RootStackParamList, 'SignUp
   getId: jest.fn(),
   getState: jest.fn(),
 } as unknown as StackNavigationProp<RootStackParamList, 'SignUpScreen'>);
+let mockNavigation: StackNavigationProp<RootStackParamList, 'SignUpScreen'>;
+
+beforeAll( () => {
+   mockNavigation = createMockNavigation();
+});
 
 describe('SignUpScreen', () => {
- 
 
   it('should render correctly', () => {
-
-    const mockNavigation = createMockNavigation();
     const { getByPlaceholderText, getByText, getByTestId } = renderWithProviders(
       <SignUpScreen navigation={mockNavigation} />
     );
-
+    
     expect(getByText('Create Account')).toBeTruthy();
     expect(getByPlaceholderText('Full Name')).toBeTruthy();
     expect(getByPlaceholderText('Email ID')).toBeTruthy();
@@ -39,9 +41,8 @@ describe('SignUpScreen', () => {
   });
 
   it('should show error messages for empty input', async () => {
-    const mockNavigation = createMockNavigation();
     const { getByPlaceholderText, getByText, getByTestId } = renderWithProviders(
-      <SignUpScreen navigation={mockNavigation} />
+      <SignUpScreen navigation={createMockNavigation()} />
     );
 
 
@@ -61,7 +62,6 @@ describe('SignUpScreen', () => {
   });
 
   it('should show error messages for invalid password input', async () => {
-    const mockNavigation = createMockNavigation();
     const { getByPlaceholderText, getByText, getByTestId } = renderWithProviders(
       <SignUpScreen navigation={mockNavigation} />
     );
@@ -80,7 +80,6 @@ describe('SignUpScreen', () => {
   });
 
   it('should toggle password visibility when eye icon is pressed', async () => {
-    const mockNavigation = createMockNavigation();
     const {getByTestId, getByPlaceholderText } = renderWithProviders(
       <SignUpScreen navigation={mockNavigation} />
     );
@@ -102,7 +101,6 @@ describe('SignUpScreen', () => {
 
 
   it('should show error messages for invalid input', async () => {
-    const mockNavigation = createMockNavigation();
     const { getByPlaceholderText, getByText, getByTestId } = renderWithProviders(
       <SignUpScreen navigation={mockNavigation} />
     );
@@ -123,7 +121,6 @@ describe('SignUpScreen', () => {
   });
 
     it('should navigate to SignUpSuccessScreen on successful signup', async () => {
-      const mockNavigation = createMockNavigation();
       jest.spyOn(global, 'fetch').mockImplementation(() =>
         Promise.resolve({
           ok: true,
@@ -146,7 +143,6 @@ describe('SignUpScreen', () => {
     });
 
     it('should show error for already existing emailId', async () => {
-      const mockNavigation = createMockNavigation();
       jest.spyOn(global, 'fetch').mockImplementation(() =>
         Promise.resolve({
           ok: false,
@@ -169,27 +165,5 @@ describe('SignUpScreen', () => {
       });
     });
 
-    // it('should display an error message when the server returns an error', async () => {
-    //   // Mock the fetch to return a rejected promise with an error message
-    //   (fetch as jest.MockedFunction<typeof fetch>).mockImplementation(() =>
-    //     Promise.resolve({
-    //       ok: false,
-    //       json: () => Promise.resolve({ message: 'Email is already in use' }),
-    //     } as Response)
-    //   );
-  
-    //   const { getByPlaceholderText, getByText } = render(<SignUpScreen />);
-  
-    //   // Fill out the form
-    //   fireEvent.changeText(getByPlaceholderText('Email ID'), 'test@example.com');
-  
-    //   // Trigger the signup
-    //   fireEvent.press(getByText('Sign Up'));
-  
-    //   // Wait for the error message to appear
-    //   await waitFor(() => {
-    //     expect(getByText('Email is already in use')).toBeTruthy();
-    //   });
-    // });
 });
 
